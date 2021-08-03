@@ -1,0 +1,8 @@
+{
+  "projectId": "ehq52p",
+  "ignoreTestFiles": ["useDebounce.test.tsx"],
+  "component": {
+    "testFiles": "**/*.test.{ts,tsx}",
+    "componentFolder": "src"
+  }
+}
