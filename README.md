@@ -13,11 +13,11 @@ A react component for infinite scroll
 
 To install, you can use [npm](https://npmjs.org/):
 
-    $ npm install --save react-infinite-scroll
+    $ npm install --save react-scroll-infinite
 
 To install, you can use [yarn](https://https://yarnpkg.com/):
 
-    $ yarn add react-infinite-scroll
+    $ yarn add react-scroll-infinite
 
 ### Props
 

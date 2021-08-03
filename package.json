@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "main": "dist/index.js",
   "license": "MIT",
+  "repository": "jeantg/react-infinite-scroll",
   "scripts": {
     "build": "webpack",
     "test": "cypress run-ct"
