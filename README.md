@@ -1,4 +1,4 @@
-# react-infinite-scroll &middot; [![npm version](https://img.shields.io/badge/npm-v1.0.1-blue)](https://www.npmjs.com/package/react-brazil-map)
+# react-scroll-infinite &middot; [![npm version](https://img.shields.io/badge/npm-v1.0.1-blue)](https://www.npmjs.com/package/react-scroll-infinite)
 
 A react component for infinite scroll
 
@@ -35,7 +35,7 @@ To install, you can use [yarn](https://https://yarnpkg.com/):
 import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
 import { CardPassengers, Props } from "./CardPassengers";
-import InfiniteScroll from "react-infinite-scroll";
+import InfiniteScroll from "react-scroll-infinite";
 
 function App() {
   const [data, setData] = useState<Props[]>([]);
