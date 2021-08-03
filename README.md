@@ -1,4 +1,4 @@
-# react-scroll-infinite &middot; [![npm version](https://img.shields.io/badge/npm-v1.0.1-blue)](https://www.npmjs.com/package/react-scroll-infinite)
+# react-scroll-infinite &middot; [![npm version](https://img.shields.io/badge/npm-v1.0.0-blue)](https://www.npmjs.com/package/react-scroll-infinite)
 
 A react component for infinite scroll
 

@@ -1,9 +1,13 @@
 {
   "name": "react-scroll-infinite",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "license": "MIT",
   "repository": "jeantg/react-infinite-scroll",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
   "scripts": {
     "build": "webpack",
     "test": "cypress run-ct"
