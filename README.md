@@ -2,7 +2,7 @@
 
 A react component for infinite scroll
 
-![](https://i.ibb.co/G3sxvs3/ezgif-2-5b04e1ac12d8.gif)
+![](https://im2.ezgif.com/tmp/ezgif-2-5b04e1ac12d8.gif)
 
 ## Table of Contents
 
