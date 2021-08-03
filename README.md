@@ -19,6 +19,10 @@ To install, you can use [yarn](https://https://yarnpkg.com/):
 
 ### Props
 
-| Props    | Options   | Default | Description   |
-| -------- | --------- | ------- | ------------- |
-| children | Component | none    | Any component |
+| Props           | Options           | Default  | Description                                                                |
+| --------------- | ----------------- | -------- | -------------------------------------------------------------------------- |
+| children        | Component         | none     | Any component                                                              |
+| variant         | string            | none     | A class name that will be passed to the component's parent div.            |
+| onLoad          | function          | none     | The function that will be called when the scroll reaches the top or bottom |
+| debounceTimeOut | number            | 1000     | The time in milliseconds to wait until the function is called              |
+| dir             | "top" or "bottom" | "bottom" | The direction of the scroll                                                |
