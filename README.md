@@ -7,7 +7,7 @@ A react component for infinite scroll
 ## Table of Contents
 
 - [Installation](#installation)
-- [Examples](#examples)
+- [Examples](#example)
 
 ## Installation
 
@@ -28,3 +28,56 @@ To install, you can use [yarn](https://https://yarnpkg.com/):
 | onLoad          | function          | none     | The function that will be called when the scroll reaches the top or bottom |
 | debounceTimeOut | number            | 1000     | The time in milliseconds to wait until the function is called              |
 | dir             | "top" or "bottom" | "bottom" | The direction of the scroll                                                |
+
+## Example
+
+```jsx
+import axios from "axios";
+import { useCallback, useEffect, useState } from "react";
+import { CardPassengers, Props } from "./CardPassengers";
+import InfiniteScroll from "./InfiniteScroll";
+
+function App() {
+  const [data, setData] = useState<Props[]>([]);
+  const [page, setPage] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const getPassengers = useCallback(async () => {
+    setLoading(true);
+    const response = await axios
+      .get<{ data: Props[] }>("https://dummyapi.io/data/api/user", {
+        headers: {
+          "app-id": "lTE5abbDxdjGplutvTuc",
+        },
+        params: {
+          page,
+          limit: 45,
+        },
+      })
+      .finally(() => setTimeout(() => setLoading(false), 3000));
+    const users = response.data.data;
+
+    setPage(page + 1);
+    setData(page > 0 ? [...data, ...users] : users);
+  }, [data, page]);
+
+  useEffect(() => {
+    getPassengers();
+  }, []);
+  return (
+    <div className="app">
+      <header>
+        <h1>Users</h1>
+      </header>
+
+      <InfiniteScroll onLoad={getPassengers} variant="infinite">
+        <ul>
+          {data.map((user: Props) => (
+            <CardPassengers key={user.id} {...user} />
+          ))}
+        </ul>
+        {loading && <p>Loading</p>}
+      </InfiniteScroll>
+    </div>
+  );
+}
+```
