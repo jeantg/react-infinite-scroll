@@ -35,7 +35,7 @@ To install, you can use [yarn](https://https://yarnpkg.com/):
 import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
 import { CardPassengers, Props } from "./CardPassengers";
-import InfiniteScroll from "./InfiniteScroll";
+import InfiniteScroll from "react-infinite-scroll";
 
 function App() {
   const [data, setData] = useState<Props[]>([]);
