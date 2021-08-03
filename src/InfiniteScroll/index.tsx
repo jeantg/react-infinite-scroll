@@ -1,6 +1,6 @@
 import { createRef, useState } from "react";
 import { useDebounce } from "../hooks/useDebounce";
-import { Dir, InfiniteScrollProps } from "./InfiniteScroll.d";
+import { Dir, InfiniteScrollProps } from "../index.d";
 
 const InfiniteScroll = ({
   children,
